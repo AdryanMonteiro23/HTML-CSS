@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "karina";
+    src: url(estilos/fontes/Karina.ttf) format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor01: #ebebeb;
+    --cor02: #5a7324;
+    --cor03: #8aa626;
+    --cor04: #b9bf88;
+    --cor05: #a3a656;
+    --cor06: #0E522C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', arial, sans-serif;
+    transition: linear 0.1s;
+}
+
+h2 {
+    font-family: 'karina', Arial, Helvetica, sans-serif;
+    margin: auto;
+    letter-spacing: .1em;
+    font-size: 2.6em;
+    font-weight: normal;
+    border-bottom: 3px solid;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+header {
+    display: flex;
+    background-color: #ebebeb;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.contheader > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+#logoheader {
+    width: 200px;
+    padding-right: 400px;
+}
+
+header nav {
+    font-size: .9em;
+    padding-right: 65px;
+}
+
+
+header nav a {
+    margin-left: 45px;
+    font-family: 'montserrat', arial, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--cor06);
+}
+
+.botaowpp > a{
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 90px;
+    padding: 15px;
+    display: flex;
+    margin: auto;
+    background-color: var(--cor02);
+}
+
+.botaowpp  img {
+    width: 20px;
+    padding-right: 5px;
+}
+
+.botaowpp > a:hover {
+    font-size: .9em;
+    background-color: #3d4e18;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.178);
+}
+
+
+main {
+    
+}
+
+.sobre {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.253);
+
+}
+
+.textosobre {
+    align-content: center;
+    padding-left: 50px;
+}
+
+.textosobre > h1 {
+    color: #0E522C;
+    font-size: 4em;
+    display: flex;
+    font-family: "karina", arial, sans-serif;
+    font-weight: normal;
+    padding-bottom: 25px;
+}
+
+.textosobre > p {
+    color: #5a7324;
+    padding-bottom: 40px;
+    text-align: justify;
+    width: 75%;
+    line-height: 1.5em;
+    hyphens: auto;
+}
+
+#botaomais {
+    font-size: 1em;
+    letter-spacing: .06em;
+    font-family: "Karina", arial, sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #8aa626;
+    padding: 10px 15px;
+    width: 40%;
+    text-align: center;
+}
+
+.sobrenos {
+    background-image: url("mídias/background.jpg");
+    height: 100vh;
+    align-content: center;
+}
+
+.nossosserviços {
+    background-color: #5a7324;
+    margin: auto;
+}
+
+.listaservicos {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.listaservicos > h2 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #a3a656;
+    color: #ebebeb;
+    font-family: 'karina', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.lista  {
+    display: flex;
+}
+
+.lista > div > h3 {
+    max-width: 80%;
+    font-family: 'karina', Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: .05em;
+    padding-bottom: 20px;
+}
+#jdv {
+    max-width: 60%;
+}
+
+.lista > div > ul {
+    color: #b9bf88;
+    list-style: none;
+    line-height: 1.4em;
+    padding-bottom: 30px;
+}
+
+li {
+    font-weight: 300;
+    font-size: .9em;
+    max-width: 70%;
+    margin-bottom: 15px;
+}
+
+.portfolio {
+    background-color: #ebebeb;
+    padding-bottom: 40px;
+}
+
+.nossoportfolio {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nossoportfolio > h2 {
+    padding-top: 30px;
+    text-align: center;
+    color: #0E522C;
+    border-bottom: solid var(--cor03);
+    padding-bottom: 10px;
+}
+
+.portfolioimagens {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+
+#imagemport {
+    margin: auto;
+}
+
+#seta {
+    width: 50px;
+    max-width: 1200px;
+}
+
+.sectioncontato {
+    background-color: var(--cor03);
+}
+
+.contato {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contato > h2 {
+    border-bottom: none;
+    color: var(--cor06);
+    margin-bottom: auto;
+}
+
+.listacontato {
+    border-left: 3px solid white;
+    padding-left: 115px;
+}
+
+.listacontato > div {
+    align-items: center;
+    font-weight: 600;
+    gap: 10px;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+}
+
+footer {
+    background-color: #0E522C;
+}
+
+#logofooter {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.imagemfooter {
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    border-bottom: 3px solid var(--cor04);
+}
+
+.social {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    gap: 65px;
+}
+
+.creditos {
+    font-size: .8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: gray;
+    background-color: black;
+}
+
+
+
+/* ANIMAÇÕES ------------------------------------------------------- */
+
+#logoheader {
+    cursor: pointer;
+}
+
+nav > a:hover {
+    font-size: 1.05em;
+    padding-bottom: 3px;
+    cursor: pointer;
+    border-bottom: 3px solid var(--cor03);
+}
+
+#botaomais:hover {
+    cursor: pointer;
+    background-color: #0E522C;
+    letter-spacing: 0.1em;
+
+}
+
+.imagemfooter > img:hover{
+    cursor: pointer;
+}
+
+.social > img:hover {
+    cursor: pointer;
+}
